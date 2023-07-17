@@ -19,5 +19,5 @@ para executar em ambiente virtual com arquivo de saída definido.
 
 É possível gerar um cronjob diário, executado às 17h, com o seguinte formato:
 ```cron
-0 17 * * *
+0 17 * * * ${CAMINHO_DO_REPOSITORIO}/run.sh
 ```
