@@ -15,7 +15,7 @@ ou
 ```sh
 ./run.sh
 ```
-para executar em ambiente virtual com arquivo de saída definido.
+para executar em ambiente virtual com arquivo de saída definido, com nome `ANO-MES-DIA.txt`.
 
 É possível gerar um cronjob diário, executado às 17h, com o seguinte formato:
 ```cron
