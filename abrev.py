@@ -1,6 +1,6 @@
 preposicoes = [
     'a', 'ante', 'após', 'até', 'com', 'contra', 'de', 'da', 'do', 'desde', 'em', 'na', 'no', 'entre',
-    'para', 'pra', 'pro', 'perante', 'por', 'sem', 'sob', 'sobre', 'trás'
+    'para', 'pra', 'pro', 'perante', 'por', 'sem', 'sob', 'sobre', 'trás', 'e'
 ]
 
 siglas = {
@@ -86,6 +86,8 @@ siglas = {
     'BC': 'Beco',
     'Bl': 'Bloco',
     'Cond': 'Condomínio',
-    'Ch': 'Chácara'
+    'Ch': 'Chácara',
+    'Cem': 'Cemitério',
+    'Jd': 'Jardim',
 }
 
