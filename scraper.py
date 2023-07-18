@@ -47,7 +47,7 @@ def main():
     response = requests.get('https://obituarios.curitiba.pr.gov.br/publico/falecimentos.aspx')
     if response.status_code != 200:
         print('ERRO: Página não disponível! Abortando...')
-        quit()
+        return response.status_code
     html = response.text
 
     soup = bs(html, 'html.parser')
@@ -61,6 +61,8 @@ def main():
         p = Person(person)
         print(p.beautify())
         print()
+
+    return response.status_code
 
 def capitalize(sentence: str):
             words = sentence.split(' ')
@@ -106,6 +108,3 @@ def format_hour(sentence: str):
     
     hour = tokens[1].split(':')
     return f'{hour[0]}h{hour[1][:-1] if hour[1] != "00h" else ""}'
-
-if __name__ == '__main__':
-    main()
